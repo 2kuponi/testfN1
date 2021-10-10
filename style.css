@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(imagef/backgroundcon.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    /* height: 100vh; */
+}
+
+/*---- HEADER --- */
+
+header {
+    background: transparent;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    /* padding: 5vh; */
+    margin: 3vh auto 0.7vh;
+    z-index: 10;
+}
+
+.thing1container {
+    flex: 1;
+    background: #fff;
+    padding: 5vh 0;
+}
+
+nav {
+    flex: 3;
+    justify-content: center;
+}
+
+.thing2container {
+    justify-content: flex-end;
+    flex: 1;
+    background: #fff;
+    padding: 5vh 0;
+}
+
+.thing1container, nav, .thing2container {
+    display: flex;
+}
+
+header nav ul li a {
+    text-decoration: none;
+}
+
+ul {
+    justify-content: space-around;
+}
+
+header nav ul li {
+    list-style: none;
+    float: left;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 500;
+    /* color: #fff; */
+    transition: 0.5s;
+}
+
+header nav ul li a:hover {
+    color: rgb(221, 194, 39);
+    transition: 0.5s ease;
+}
+
+.linecon {
+    content: "";
+    background: #efefef;
+    /* display: block; */
+    height: 3px;
+    width: 75%;
+    margin: auto;
+}
+
+nav ul li a.activep {
+    color: rgb(221, 194, 39);
+}
+/* ------ CONTENT ------ */
+
+#home {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#home .homecontent {
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+
+#home .homecontent h1 {
+    background: #fff;
+    font-size: 4.5em;
+    text-transform: capitalize;
+    font-weight: 900;
+    padding: 0.05em;
+    margin-bottom: 0.2em;
+    color: gold;
+    /* border-radius: 10px; */
+}
+
+#home .homecontent p {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    color: rgb(230, 212, 212);
+    letter-spacing: 0.3em;
+    margin-bottom: 7vh;
+}
+
+#home .homecontent a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    background: gold;
+    padding: 10px;
+    font-size: 1em;
+}
+
+#home .homecontent .rty {
+    transition: 0.5s;
+
+}
+
+#home .homecontent a:hover{
+    color: gold;
+    transition: 0.5s;
+    background: #fff;
+}
+
